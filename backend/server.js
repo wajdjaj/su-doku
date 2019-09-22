@@ -17,7 +17,7 @@ http.createServer(function (req, res) {
             pathToIndex = path.normalize(pathToIndexHtml)
             fs.createReadStream(pathToIndexHtml).pipe(res)
         } else {
-            var fsPath = frontendDirectory + path.normalize(reqUrl.pathname)
+            var fsPath = path.join(frontendDirectory, path.normalize(reqUrl.pathname))
             var fileStream = fs.createReadStream(fsPath)
             fileStream.pipe(res)
             fileStream.on('open', function () {
@@ -36,3 +36,5 @@ http.createServer(function (req, res) {
 }).listen(port)
 
 console.log("listening on port " + port)
+console.log("baseDirectory: " + baseDirectory)
+console.log("frontendDirectory:" + frontendDirectory)
