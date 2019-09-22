@@ -1,0 +1,134 @@
+:root {
+    --border-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #666
+}
+
+body h1 {
+    color: #ddd;
+}
+
+.nbrInput {
+    padding: 0.6em 0.8em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.input {
+    /* background-color: #fff; */
+    padding: 0.4em 0.4em;
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    border: none;
+    color: #444;
+}
+
+.btn {
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5em 0.5em;
+}
+
+.control {
+    margin-bottom: 0.6em;
+}
+/* Paint the borders */
+#c00, #c01, #c02, #c03, #c04, #c05, #c06, #c07, #c08 {
+    border-top: 2px solid var(--border-color);
+}
+
+#c00, #c10, #c20, #c30, #c40, #c50, #c60, #c70, #c80 {
+    border-left: 2px solid var(--border-color);
+}
+
+#c08, #c18, #c28, #c38, #c48, #c58, #c68, #c78, #c88 {
+    border-right: 2px solid var(--border-color);
+}
+
+#c80, #c81, #c82, #c83, #c84, #c85, #c86, #c87, #c88 {
+    border-bottom: 2px solid var(--border-color);
+}
+
+#c02, #c12, #c22, #c32, #c42, #c52, #c62, #c72, #c82 {
+    border-right: 2px solid var(--border-color);
+}
+
+#c05, #c15, #c25, #c35, #c45, #c55, #c65, #c75, #c85 {
+    border-right: 2px solid var(--border-color);
+}
+
+#c20, #c21, #c22, #c23, #c24, #c25, #c26, #c27, #c28 {
+    border-bottom: 2px solid var(--border-color);
+}
+
+#c50, #c51, #c52, #c53, #c54, #c55, #c56, #c57, #c58 {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.container {
+
+    text-align: center;
+    /* position: relative; */
+    padding: 4em 4em;
+    margin: auto;
+    margin-top: 3em;
+    width: 40em;
+    background: #558855;
+    border-radius: 10px;
+}
+
+table {
+    margin: auto;
+    border-spacing: 1px;
+    /* background: #ccc; */
+}
+
+
+/* .G1 {
+    background-color: #ccc;
+}
+
+.G2 {
+    background-color: #888;
+}
+
+.G3 {
+    background-color: #fff;
+}
+
+.G4 {
+    background-color: #553333;
+}
+
+.G5 {
+    background-color: #773333;
+}
+
+.G6 {
+    background-color: #cc3333;
+}
+
+.G7 {
+    background-color: #557722;
+}
+
+.G8 {
+    background-color: #777722;
+}
+
+.G9 {
+    background-color: #cc7722;
+} */

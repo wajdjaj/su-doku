@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Su-Doku solver by Hawoay Tao</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Su-doku solver in Javascript</h1>
+        <br>
+        <p>Design by Hawoay Tao, using backtracking (depth-first search) algorithm on the client side and vanilla Javascript.</p>
+        <br>
+        <div class="control">
+            Auto validation after input:
+            <label class="radio">
+                <input type="radio" name="validation" id="autoValidation" checked> Active
+            </label>
+            <label class="radio">
+                <input type="radio" name="validation"> Inactive
+            </label>
+        </div>
+        <label>Difficulty:</label>
+        <button id="btnEasy" class="btn">Easy</button>
+        <button id="btnNormal" class="btn">Normal</button>
+        <button id="btnDifficult" class="btn">Difficult</button>
+        <br><br>
+        <span id="board"></span>
+        <!-- <button class="nbrInput" id="nbrInputDel">Del</button>
+        <button class="nbrInput" id="nbrInput1">1</button>
+        <button class="nbrInput" id="nbrInput2">2</button>
+        <button class="nbrInput" id="nbrInput3">3</button>
+        <button class="nbrInput" id="nbrInput4">4</button>
+        <button class="nbrInput" id="nbrInput5">5</button>
+        <button class="nbrInput" id="nbrInput6">6</button>
+        <button class="nbrInput" id="nbrInput7">7</button>
+        <button class="nbrInput" id="nbrInput8">8</button>
+        <button class="nbrInput" id="nbrInput9">9</button> -->
+        <br>
+        <button id="btnSolve" class="btn">Solve</button>
+    </div>
+    <script src="solver.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
