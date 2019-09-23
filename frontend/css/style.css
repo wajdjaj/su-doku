@@ -16,6 +16,15 @@ body {
 
 body h1 {
     color: #ddd;
+    margin-bottom: 1em;
+}
+
+#info {
+    margin-bottom: 1em;
+}
+
+#btnSolve {
+    padding: 0.5em 1em;
 }
 
 .nbrInput {
@@ -25,7 +34,6 @@ body h1 {
 }
 
 .input {
-    /* background-color: #fff; */
     padding: 0.4em 0.4em;
     text-align: center;
     width: 1.5em;
@@ -35,16 +43,57 @@ body h1 {
     color: #444;
 }
 
-.btn {
-    padding: 0.5em 0.5em;
+/* .btn {
+    padding: 0.5em 0.8em;
     border-radius: 5px;
     border: none;
     margin: 0.5em 0.5em;
-}
+} */
+
 
 .control {
     margin-bottom: 0.6em;
 }
+
+.container {
+    text-align: center;
+    padding: 4em 4em;
+    margin: auto;
+    margin-top: 3em;
+    width: 40em;
+    background: #558855;
+    border-radius: 10px;
+}
+
+.btn {
+  padding: 0.5em 0.8em;
+  /* font-size: 24px; */
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+table {
+    margin: auto;
+    border-spacing: 1px;
+}
+
 /* Paint the borders */
 #c00, #c01, #c02, #c03, #c04, #c05, #c06, #c07, #c08 {
     border-top: 2px solid var(--border-color);
@@ -77,58 +126,3 @@ body h1 {
 #c50, #c51, #c52, #c53, #c54, #c55, #c56, #c57, #c58 {
     border-bottom: 2px solid var(--border-color);
 }
-
-.container {
-
-    text-align: center;
-    /* position: relative; */
-    padding: 4em 4em;
-    margin: auto;
-    margin-top: 3em;
-    width: 40em;
-    background: #558855;
-    border-radius: 10px;
-}
-
-table {
-    margin: auto;
-    border-spacing: 1px;
-    /* background: #ccc; */
-}
-
-
-/* .G1 {
-    background-color: #ccc;
-}
-
-.G2 {
-    background-color: #888;
-}
-
-.G3 {
-    background-color: #fff;
-}
-
-.G4 {
-    background-color: #553333;
-}
-
-.G5 {
-    background-color: #773333;
-}
-
-.G6 {
-    background-color: #cc3333;
-}
-
-.G7 {
-    background-color: #557722;
-}
-
-.G8 {
-    background-color: #777722;
-}
-
-.G9 {
-    background-color: #cc7722;
-} */

@@ -1,40 +1,29 @@
-var http = require('http')
-var url = require('url')
-var fs = require('fs')
-var path = require('path')
+var express = require("express");
+var cors = require("cors");
+require("dotenv").config();
 
-var baseDirectory = path.join(__dirname, '..')
-var frontendDirectory = path.join(baseDirectory, '/frontend')
+var PORT = process.env.PORT || 9000;
 
-var port = 8080
+var app = express();
+app.use(cors({}));
 
-http.createServer(function (req, res) {
-    try {
-        var reqUrl = url.parse(req.url)
+app.get("/easy", function(req, res) {
+  res.send(
+    "026730941571492638349168275195384762762951384438627519914573826257816493683249157"
+  );
+});
+app.get("/medium", function(req, res) {
+  res.send(
+    "820005041001492600340100075105304060700050384038620500014073020207800403080049107"
+  );
+});
 
-        if (req.url === '/') {
-            var pathToIndexHtml = path.join(frontendDirectory, '/index.html')
-            pathToIndex = path.normalize(pathToIndexHtml)
-            fs.createReadStream(pathToIndexHtml).pipe(res)
-        } else {
-            var fsPath = path.join(frontendDirectory, path.normalize(reqUrl.pathname))
-            var fileStream = fs.createReadStream(fsPath)
-            fileStream.pipe(res)
-            fileStream.on('open', function () {
-                res.writeHead(200)
-            })
-            fileStream.on('error', function (e) {
-                res.writeHead(404)
-                res.end()
-            })
-        }
-    } catch (e) {
-        res.writeHead(500)
-        res.end()
-        console.log(e.stack)
-    }
-}).listen(port)
+app.get("/hard", function(req, res) {
+  res.send(
+    "320000080000700506000081070000008362000090000653100000030210000908007000010000039"
+  );
+});
 
-console.log("listening on port " + port)
-console.log("baseDirectory: " + baseDirectory)
-console.log("frontendDirectory:" + frontendDirectory)
+app.listen(PORT, () => {
+  console.log("backend listening at " + PORT);
+});
